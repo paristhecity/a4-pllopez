@@ -18,6 +18,7 @@
     </svg>
     <button id="start"> Start </button>
     <label id="counter" about="0"> Counter: 0 </label>
+    <button id="home"> Home </button>
 
 </body>
 <!-- Javascript -->
@@ -29,6 +30,9 @@
         $("#start").on("click", function() {
             $(this).css({ display: "none"});
             startGame();
+        });
+        $("#home").on("click", function() {
+            location.href = "/";
         });
     });
 

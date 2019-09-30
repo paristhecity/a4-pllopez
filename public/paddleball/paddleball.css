@@ -31,9 +31,6 @@ svg {
 
 button {
     position:fixed;
-    left: 40vw;
-    top: 50vh;
-    width: 20vw;
     padding: 2vh;
     text-align: center;
     font-family: "Geneva", sans-serif;
@@ -41,8 +38,21 @@ button {
     font-size: 20px;
     background-color: darkslategrey;
     color: lavender;
-    box-shadow: 0 0 30px 15px #6e6e6e;
     border: none;
+}
+
+button#start {
+    box-shadow: 0 0 30px 15px #6e6e6e;
+    left: 40vw;
+    top: 50vh;
+    width: 20vw;
+}
+
+button#home {
+    padding: 1vh;
+    left: 0;
+    top: 7vh;
+    width: 10vw;
 }
 
 label {
