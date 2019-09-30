@@ -1,0 +1,16 @@
+{
+  "name": "Paris Lopez",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "helmet": "^3.21.1",
+    "jquery.animate": "^1.8.9"
+  }
+}

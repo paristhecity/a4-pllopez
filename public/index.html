@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="index.css" type="text/css" />
+
+    <!-- Title -->
+    <title> CS4241 A4 </title>
+</head>
+<body>
+    <article>
+        <header>
+            <h1> Time Wasters </h1>
+        </header>
+        <section class="arrow left"> </section>
+        <section class="arrow right"> </section>
+
+        <section class="games">
+            <section class="game one">More to Come...</section>
+            <section class="game two"></section>
+        </section>
+
+
+    </article>
+</body>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(function () {
+            $(".game.one").on("click", function() {
+                alert("Coming Soon!");
+            });
+        });
+        $(function () {
+            $(".game.two").on("click", function() {
+                location.href = "/paddleball/paddleball.html";
+            });
+        });
+        $(function () {
+            $(".left").on("click", function() {
+                console.log("left");
+                let last = $(".game:last-child"); //last child of game
+                let first = $(".game:first-child");
+                last.insertBefore(first);
+                first.css({
+                    animation: "slide-out-left 1s forwards"
+                });
+                last.css({
+                    animation: "slide-in-left 1s forwards"
+                });
+            });
+        });
+        $(function () {
+            $(".right").on("click", function() {
+                console.log("right");
+                let last = $(".game:last-child"); //last child of game
+                let first = $(".game:first-child");
+                last.css({
+                    animation: "slide-out-right 1s forwards"
+                });
+                first.css({
+                    animation: "slide-in-right 1s forwards"
+                });
+                first.insertAfter(last);
+            });
+        });
+    });
+
+</script>
+
+<script src="index.js" type="text/javascript"></script>
+
+</html>

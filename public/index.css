@@ -1,0 +1,138 @@
+body {
+    background-color: lavender;
+}
+
+article {
+    position: absolute;
+    background-color: lightblue;
+    font-family: "Geneva", sans-serif;
+    left: 0;
+    top: 20vh;
+    height: 60vh;
+    width: 100vw;
+    box-shadow: 0 0 30px 15px #6e6e6e;
+}
+
+header {
+    position: fixed;
+    background-color: darkslategrey;
+    color: lavender;
+    top: 15vh;
+    left: 25vw;
+    width: 50vw;
+    min-height: 10vh;
+    box-shadow: 0 0 10px #6e6e6e;
+}
+
+h1 {
+    position: relative;
+    color: lavender;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    left: 25%;
+    width: 50%;
+}
+
+summary {
+    text-align: center;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+}
+
+.games {
+    position: relative;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    height: 65%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.game.one{
+    background-color: darkslategrey;
+    color: lavender;
+    text-align: center;
+    padding-top: 20%;
+    font-weight: normal;
+    font-size: 30px;
+    cursor: default;
+
+}
+
+.game.two {
+    background: url("/assets/paddleImg.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+
+.arrow {
+    position: absolute;
+    width: 0.5%;
+    height: 0;
+    border-top: 25px solid #ADD8E6;
+    border-right: 50px solid darkslategrey;
+    border-bottom: 25px solid #ADD8E6;
+}
+
+.arrow.left {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+.arrow.right {
+    width: 0;
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    transform: rotate(180deg);
+}
+
+@keyframes slide-in-left {
+    0% {
+        left: 0;
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-out-left {
+    0% {
+        left: 100%;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        left: -100%;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out-right {
+    0% {
+        left: 0;
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
