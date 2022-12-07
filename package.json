@@ -6,10 +6,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "compression": "^1.7.4",
     "debug": "~2.6.9",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "helmet": "^3.21.1",
     "jquery.animate": "^1.8.9"
   }
